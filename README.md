@@ -34,13 +34,13 @@ Additional Specs:
 - [ ] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/)
 
 Resources:
-[To Do List app Tutorial on YouTube](https://www.youtube.com/watch?v=XGOJVfOW-bo)
-[To Do Iphone App with Firebase and React Native](https://devdactic.com/react-native-firebase-todo/)
-[Another with Firebase and React Native](https://firebase.googleblog.com/2016/01/the-beginners-guide-to-react-native-and_84.html)
-[Using Jquery & local storage](https://www.sitepoint.com/building-list-jquery-local-storage/)
-[Javascript to do list](http://docs.railsbridge.org/javascript-to-do-list/javascript-to-do-list)
-[JSON to do list](http://programmers.stackexchange.com/questions/261269/database-schema-for-a-todo-list)
-[Khan Academy: To Do list on SQL basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/p/challenge-todo-list-database-stats)
+- [To Do List app Tutorial on YouTube](https://www.youtube.com/watch?v=XGOJVfOW-bo)
+- [To Do Iphone App with Firebase and React Native](https://devdactic.com/react-native-firebase-todo/)
+- [Another with Firebase and React Native](https://firebase.googleblog.com/2016/01/the-beginners-guide-to-react-native-and_84.html)
+- [Using Jquery & local storage](https://www.sitepoint.com/building-list-jquery-local-storage/)
+- [Javascript to do list](http://docs.railsbridge.org/javascript-to-do-list/javascript-to-do-list)
+- [JSON to do list](http://programmers.stackexchange.com/questions/261269/database-schema-for-a-todo-list)
+- [Khan Academy: To Do list on SQL basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/p/challenge-todo-list-database-stats)
 
 ### Previous Spec Ideas: 
 
