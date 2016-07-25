@@ -1,0 +1,54 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+header .authentication, header .user-info {
+  flex: 1;
+}
+
+.btn-login{
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+}
+
+header .user-info {
+  text-align: right;
+}
+
+main {
+  width: 100%;
+}
+
+main .todo, main .add-todo {
+  margin: auto;
+  width: 300px;
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: row;
+}
+
+main .todo input, main .todo a {
+  flex: 1;
+}
+
+main .todo span {
+  flex: 8;
+  text-align: left
+}
+
+main .add-todo input {
+  flex: 9;
+}
+
+main .todo.completed {
+  text-decoration: line-through;
+}

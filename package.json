@@ -1,9 +1,10 @@
 {
   "name": "tutorial-world",
   "version": "1.0.0",
-  "description": "Rachel and Monoica's to do app and tutorial",
+  "description": "Rachel and Monica's (what about jrob) to do app and tutorial",
   "main": "index.js",
   "scripts": {
+    "start": "DEBUG=tutorial-world:* nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,10 @@
   "homepage": "https://github.com/Moniarchy/Tutorial-World#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "express3-handlebars": "^0.5.2"
+    "express3-handlebars": "^0.5.2",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }
