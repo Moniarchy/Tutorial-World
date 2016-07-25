@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
+var exphbs = require('express3-handlebars');
+app.engine('handlebars', exphbs({defaultlayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 app.get('/', function(req, res){
-	res.send('Hello, World');
+	res.render('index');
 });
 
 app.use('/public', express.static('public'));
