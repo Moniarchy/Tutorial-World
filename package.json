@@ -1,0 +1,22 @@
+{
+  "name": "tutorial-world",
+  "version": "1.0.0",
+  "description": "Rachel and Monoica's to do app and tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moniarchy/Tutorial-World.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moniarchy/Tutorial-World/issues"
+  },
+  "homepage": "https://github.com/Moniarchy/Tutorial-World#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
