@@ -43,3 +43,20 @@ router.get( '/:id', function( request, response, next ) {
 // DELETE request to the URI /todos/:TODO_ID
 
 module.exports = router;
+
+router.get( '/add', function( request, response, next ) {
+  var collection = db.get().collection( 'todos' );
+
+  var todo = {
+    completed: false,
+    text: 'This is a test'
+  }
+
+  collection.insert( todo, function( error, result ) {
+    if( error ) {
+      response.send( { error: error })
+    } else {
+      response.send( result )
+    }
+  });
+});

@@ -32,7 +32,7 @@ var connectionString = (
 
 db.connect( connectionString, function( err ) {
   if ( err ) {
-    console.log( 'Unable to connect to Mongo.' )
+    console.log( 'Unable to connect to Mongo.', err )
     process.exit(1)
   } else {
     app.listen(port, function() {
