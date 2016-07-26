@@ -38,7 +38,21 @@ router.get( '/add', function( request, response, next ) {
 });
 
 router.post( '/', function( request, response, next ) {
-  console.log( request.params )
+  // console.log( request.body )
+  var collection = db.get().collection( 'todos' );
+
+  var todo = {
+    text: request.body.text,
+    completed: false
+  }
+
+  collection.insert( todo, function( error, result ) {
+    if( error ) {
+      response.send( { error: error })
+    } else {
+      response.send( { result: 'ok' } )
+    }
+  });
 });
 
 router.get( '/delete', function( request, response, next){

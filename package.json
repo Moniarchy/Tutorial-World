@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Moniarchy/Tutorial-World#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express3-handlebars": "^0.5.2",
     "mongo": "^0.1.0",
