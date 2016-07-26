@@ -3,14 +3,26 @@ var router = express.Router();
 
 var db = require('../db')
 
-router.get( '/', function( request, response, next ) {
+
+var jsonResponder = function( response ) {
+  return function( error, result ) {
+    if( error ) {
+      response.send( error )
+    } else {
+      response.send( result )
+    }
+  }
+}
+
+var indexRoute = function( request, response, next ) {
   var connection = db.get()
   var collection = connection.collection( 'todos' );
 
-  collection.find().toArray( function( error, databaseQueryResult ) {
-    response.send( databaseQueryResult );
-  });
-});
+  collection.find().toArray( jsonResponder( response ) );  
+}
+
+
+router.get( '/', indexRoute );
 
 router.get( '/add', function( request, response, next ) {
   var collection = db.get().collection( 'todos' );
@@ -28,7 +40,7 @@ router.get( '/add', function( request, response, next ) {
     text: 'Nope?'
   }
 
-  collection.insert( todo3, function( error, result ) {
+  collection.insert( todo, function( error, result ) {
     if( error ) {
       response.send( { error: error })
     } else {
@@ -38,9 +50,8 @@ router.get( '/add', function( request, response, next ) {
 });
 
 router.post( '/', function( request, response, next ) {
-  // console.log( request.body )
   var collection = db.get().collection( 'todos' );
-
+// 
   var todo = {
     text: request.body.text,
     completed: false
@@ -56,8 +67,7 @@ router.post( '/', function( request, response, next ) {
 });
 
 router.get( '/delete', function( request, response, next){
-  var collection = db.delete().collection( 'todos' );
-
+  var collection = db.get().collection( 'todos' );
 })
 
 module.exports = router;
