@@ -2,15 +2,21 @@ var express = require('express');
 var logger = require('morgan');
 var exphbs = require('express3-handlebars');
 var bodyParser = require('body-parser')
+var passport = require('passport')
 
-var db = require('./db')
+var initializePassport = require('./config/passport')
+var db = require('./config/db')
 
 var home = require( './routes/index' );
 var todos = require( './routes/todos' );
 var about = require( './routes/about' );
 var test = require( './routes/test' );
+var auth = require( './routes/authentication' );
 
 var app = express();
+
+app.use( passport.initialize() );
+app.use( passport.session() );
 
 app.use(logger('dev'));
 
@@ -26,6 +32,7 @@ app.use( '/', home );
 app.use( '/todos', todos );
 app.use( '/about', about );
 app.use( '/test', test );
+app.use( '/auth', auth );
 
 app.use('/public', express.static('public'));
 
@@ -40,6 +47,7 @@ db.connect( connectionString, function( err ) {
     console.log( 'Unable to connect to Mongo.', err )
     process.exit(1)
   } else {
+    initializePassport();
     app.listen(port, function() {
       console.log('Listening on port ' + port + '...')
     })

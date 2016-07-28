@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var ObjectId = require( 'objectid' )
 
-var db = require( '../db' );
+var db = require( '../config/db' );
 
 // READ
 // GET request to the URI /todos *for all todos*

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var db = require('../db')
+var db = require('../config/db')
 
 
 var jsonResponder = function( response ) {
