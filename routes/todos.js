@@ -42,7 +42,7 @@ router.post( '/', function( request, response, next ) {
     if( error ) {
       response.send( error ) 
     } else {
-      response.send( console.log(collection) )
+      response.send( Object.assign( todo, { _id: result.insertedIds[ 0 ] } ) )
     }
   });
 });
