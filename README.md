@@ -11,9 +11,9 @@ Create a full stack to do list web app.
 
 #### User Stories:
 The App: As a user...
-- [ ] I can create to do list items.
-- [ ] I can delete unwanted to do list items.
-- [ ] I can check items off as completed.
+- [X] I can create to do list items.
+- [X] I can delete unwanted to do list items.
+- [X] I can check items off as completed.
 - [ ] I can rearrange to do list items.
 - [ ] I can log into my account.
 - [ ] I can edit the text on existing to do's.
@@ -27,11 +27,11 @@ The App: As a user...
     - [ ] Basic Git flow with feature branches, rebase, pull request and review
 
 #### Additional Specs: 
-- [ ] Create a database of to do list items.
-- [ ] Create the back end using node and express.
+- [X] Create a database of to do list items.
+- [X] Create the back end using node and express.
 - [ ] Deploy the app to heroku.
 - [ ] JS Lint finds no mistakes
-- [ ] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
+- [X] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
 
 #### Nice To Have:
 - [ ] I can create different lists of to do's.
