@@ -2,6 +2,7 @@ function postTodo( data ) {
   return {
     method: 'post',
     body: JSON.stringify( data ),
+    credentials: 'include',
     headers: {
       'Content-Type': 'application/json'
     }
@@ -12,6 +13,7 @@ function updateTodo( data ) {
   return {
     method: 'put',
     body: JSON.stringify( data ),
+    credentials: 'include',
     headers: {
       'Content-Type': 'application/json'
     }
@@ -74,7 +76,7 @@ function renderTodos( json ) {
   }).join('')
 }
 
-fetch( '/todos' )
+fetch( '/todos', { credentials: 'include' } )
   .then( function( result ) {
     return result.json()
   })

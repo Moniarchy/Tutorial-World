@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/Moniarchy/Tutorial-World#readme",
   "dependencies": {
+    "blueimp-md5": "^2.3.0",
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "express-session": "^1.14.0",
     "express3-handlebars": "^0.5.2",
     "mongodb": "^2.2.4",
     "morgan": "^1.7.0",

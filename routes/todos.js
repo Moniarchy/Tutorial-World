@@ -7,33 +7,37 @@ var db = require( '../config/db' );
 // READ
 // GET request to the URI /todos *for all todos*
 router.get( '/', function( request, response, next ) {
-  var collection = db.get().collection( 'todos' )
+  const user_id = request.session.passport.user._id
 
-  collection.find().toArray( function( error, todoResult ) {
-    response.send( todoResult);
+  var todoCollection = db.get().collection( 'todos' )
+
+  todoCollection.find({ user_id: ObjectId( user_id ) }).toArray( function( error, todoResult ) {
+    response.send( todoResult );
   })
 });
 
 // GET request to the URI /todos/:TODO_ID
-router.get( '/:id', function( request, response, next ) {
-  var collection = db.get().collection( 'todos' )
+// router.get( '/:id', function( request, response, next ) {
+//   var collection = db.get().collection( 'todos' )
 
-  collection.findOne({ _id: ObjectId( request.params.id  )}, function( error, todoResult ) {
-    if( error ) {
-      response.send( error )
-    } else {
-      response.send( todoResult );
-    }
-  })
-
-});
+//   collection.findOne({ _id: ObjectId( request.params.id  )}, function( error, todoResult ) {
+//     if( error ) {
+//       response.send( error )
+//     } else {
+//       response.send( todoResult );
+//     }
+//   })
+// });
 
 // CREATE
 // POST request, with data, to the URI /todos
 router.post( '/', function( request, response, next ) {
+  console.log( request.session )
+  const user_id = ObjectId( request.session.passport.user._id )
   var collection = db.get().collection( 'todos' )
 
   var todo = {
+    user_id: user_id,
     completed: false,
     text: request.body.text
   }

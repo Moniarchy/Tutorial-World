@@ -1,9 +1,29 @@
 var passport = require('passport')
 var LocalStrategy = require('passport-local').Strategy
+var ObjectId = require( 'objectid' )
+var md5 = require('blueimp-md5')
 
 var db = require('./db')
 
 module.exports = function() {
+  passport.serializeUser( function( user, done ) {
+    console.log( 'serializeUser', user )
+    done( null, { 
+      email: user.username, 
+      _id: user._id, 
+      email_hash: md5( user.username.toLowerCase() ) } 
+    );
+  });
+
+  passport.deserializeUser( function( user, done ) {
+    console.log( 'deserializeUser', user )
+    var connection = db.get()
+
+    connection.collection( 'users' ).findOne({ _id: ObjectId( user._id ) }, function( error, user ) {
+      done( error, user )
+    })
+  });
+
   passport.use( new LocalStrategy (
     function( username, password, done ) {
       var connection = db.get()

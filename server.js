@@ -2,6 +2,8 @@ var express = require('express');
 var logger = require('morgan');
 var exphbs = require('express3-handlebars');
 var bodyParser = require('body-parser')
+var cookieParser = require('cookie-parser')
+var expressSession = require('express-session')
 var passport = require('passport')
 
 var initializePassport = require('./config/passport')
@@ -15,18 +17,22 @@ var auth = require( './routes/authentication' );
 
 var app = express();
 
-app.use( passport.initialize() );
-app.use( passport.session() );
-
 app.use(logger('dev'));
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.use( bodyParser.json() )
-app.use(bodyParser.urlencoded({
-  extended: true
+app.use( bodyParser.urlencoded({extended: true }))
+app.use( cookieParser() );
+app.use( expressSession({
+  secret: 'blarg',
+  resave: false,
+  saveUninitialized: false
 }))
+
+app.use( passport.initialize() );
+app.use( passport.session() );
 
 app.use( '/', home );
 app.use( '/todos', todos );
