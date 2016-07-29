@@ -1,10 +1,10 @@
 {
   "name": "tutorial-world",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rachel and Monica's (what about jrob) to do app and tutorial",
   "main": "index.js",
   "scripts": {
-    "start": "DEBUG=tutorial-world:* node server.js",
+    "start": "DEBUG=tutorial-world:* nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
