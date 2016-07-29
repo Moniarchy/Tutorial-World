@@ -15,16 +15,16 @@ The App: As a user...
 - [X] I can delete unwanted to do list items.
 - [X] I can check items off as completed.
 - [ ] I can rearrange to do list items.
-- [ ] I can log into my account.
+- [X] I can log into my account.
 - [ ] I can edit the text on existing to do's.
 
 #### The Tutorial:
 - [ ] Submit a guide PR to the guild crafts repo which includes
-    - [ ] Project planning steps (wireframes and problem assessment)
-    - [ ] Entity identification
+    - [X] Project planning steps (wireframes and problem assessment)
+    - [X] Entity identification
     - [ ] Front end and back end behavior definition
     - [ ] Creating and deploying an app to Heroku
-    - [ ] Basic Git flow with feature branches, rebase, pull request and review
+    - [X] Basic Git flow with feature branches, rebase, pull request and review
 
 #### Additional Specs: 
 - [X] Create a database of to do list items.
