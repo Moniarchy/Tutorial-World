@@ -53,7 +53,7 @@ function checkChanged( checkbox ) {
   var todoId = todoItem.attributes[ 'data-id' ].value
   var completed = checkbox.checked
 
-  fetch('/todos/' + todoId, updateTodo({ completed: completed }, 'put' ))
+  fetch('/todos/' + todoId, requestParameters({ completed: completed }, 'put' ))
     .then( function( result ) {
       if( completed ) {
         todoItem.setAttribute( 'class', 'todo completed' )
