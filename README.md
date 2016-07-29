@@ -36,7 +36,7 @@ The App: As a user...
 - [X] Create the back end using node and express.
 - [ ] Deploy the app to heroku. **50% Complete: Deployed, but didn't have time to make it load correctly. [Check it out](https://todowiggly-jacana.herokuapp.com/)**
 - [X] JS Lint finds no mistakes
-- [X] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
+- [X] Follow good Git team behaviors.
 
 #### Stretch Goals/Nice to Have's:
 - [ ] I can create different lists of to do's.
