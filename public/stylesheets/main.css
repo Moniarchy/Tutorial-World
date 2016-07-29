@@ -58,17 +58,40 @@ main .todo.completed {
   text-decoration: line-through;
 }
 
-form .auth-form {
-  width:220px;
-  flex: 1;
-  background-color: #eee;
-  margin: 1.5em;
-  padding: 2em 3em;
+.auth-form-wrapper {
+  width: 100%;
+  text-align: center;
 }
 
+form .auth-form {
+  width: 300px;
+  background-color: #eee;
+  margin: auto;
+  padding: 2em 3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
 
+.auth-form div { 
+  padding-bottom: 4px;
+}
 
+.auth-form label {
+  display: inline-block;
+  width: 100px;
+}
 
+.auth-form button {
+  margin-left: 100px;
+}
+
+a.button {
+  background-color: #369;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 5px;
+}
 
 
 

@@ -7,7 +7,6 @@ var db = require('./db')
 
 module.exports = function() {
   passport.serializeUser( function( user, done ) {
-    console.log( 'serializeUser', user )
     done( null, { 
       email: user.username, 
       _id: user._id, 
@@ -16,7 +15,6 @@ module.exports = function() {
   });
 
   passport.deserializeUser( function( user, done ) {
-    console.log( 'deserializeUser', user )
     var connection = db.get()
 
     connection.collection( 'users' ).findOne({ _id: ObjectId( user._id ) }, function( error, user ) {
