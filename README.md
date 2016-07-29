@@ -5,7 +5,12 @@ Complete a simple project and use what you learned to make a second tutorial web
 
 ## Context
 
-Create a full stack to do list web app.
+Create a full stack to do list web app and make tutorials about what your learn.
+Goals
+- Learn how front end and back end connect.
+- Learn how to dissect a new problem/challenge.
+- Go through the whole process of creating and deploying a working app in a week.
+- Level the project correctly into stretch zone (Goldilocks Status: Achievement Unlocked)
 
 ## Specifications
 
@@ -19,7 +24,7 @@ The App: As a user...
 - [X] I can edit the text on existing to do's.
 
 #### The Tutorial:
-- [X] Submit a guide PR to the guild crafts repo which includes
+- [X] Submit a guide PR to the guild crafts repo which includes: [check the repo here](https://github.com/GuildCrafts/web-development-js/pull/59/files) for all the below entries.
     - [X] ProjectH planning steps (wireframes and problem assessment)
     - [X] Entity identification
     - [X] Front end and back end behavior definition
