@@ -16,10 +16,10 @@ The App: As a user...
 - [X] I can check items off as completed.
 - [ ] I can rearrange to do list items.
 - [X] I can log into my account.
-- [ ] I can edit the text on existing to do's.
+- [X] I can edit the text on existing to do's.
 
 #### The Tutorial:
-- [ ] Submit a guide PR to the guild crafts repo which includes
+- [X] Submit a guide PR to the guild crafts repo which includes
     - [X] Project planning steps (wireframes and problem assessment)
     - [X] Entity identification
     - [ ] Front end and back end behavior definition
@@ -29,7 +29,7 @@ The App: As a user...
 #### Additional Specs: 
 - [X] Create a database of to do list items.
 - [X] Create the back end using node and express.
-- [ ] Deploy the app to heroku.
+- [ ] Deploy the app to heroku. **50% Complete: Deployed, but didn't have time to make it load correctly. [Check it out](https://todowiggly-jacana.herokuapp.com/)**
 - [ ] JS Lint finds no mistakes
 - [X] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
 
