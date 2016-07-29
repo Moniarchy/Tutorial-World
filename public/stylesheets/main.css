@@ -16,7 +16,7 @@ header .authentication, header .user-info {
 
 h1 {
   font-family:'Yellowtail', cursive;
-text-align: center;
+  text-align: center;
 }
 
 .btn-login{
