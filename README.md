@@ -14,7 +14,7 @@ The App: As a user...
 - [X] I can create to do list items.
 - [X] I can delete unwanted to do list items.
 - [X] I can check items off as completed.
-- [ ] I can rearrange to do list items.
+- [ ] I can rearrange to do list items. **(50% got half way, but it's not complete :< )**
 - [X] I can log into my account.
 - [X] I can edit the text on existing to do's.
 
@@ -22,8 +22,8 @@ The App: As a user...
 - [X] Submit a guide PR to the guild crafts repo which includes
     - [X] Project planning steps (wireframes and problem assessment)
     - [X] Entity identification
-    - [ ] Front end and back end behavior definition
-    - [ ] Creating and deploying an app to Heroku
+    - [X] Front end and back end behavior definition
+    - [ ] Creating and deploying an app to Heroku. **(0% We didn't get our app to deploy on heroku correctly, so we didn't feel like we could write this)**
     - [X] Basic Git flow with feature branches, rebase, pull request and review
 
 #### Additional Specs: 
@@ -33,7 +33,7 @@ The App: As a user...
 - [ ] JS Lint finds no mistakes
 - [X] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
 
-#### Nice To Have:
+#### Stretch Goals/Nice to Have's:
 - [ ] I can create different lists of to do's.
 - [ ] Write the app using ES6 and deploy using babel.
 
