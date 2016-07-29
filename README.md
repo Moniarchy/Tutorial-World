@@ -20,7 +20,7 @@ The App: As a user...
 
 #### The Tutorial:
 - [X] Submit a guide PR to the guild crafts repo which includes
-    - [X] Project planning steps (wireframes and problem assessment)
+    - [X] ProjectH planning steps (wireframes and problem assessment)
     - [X] Entity identification
     - [X] Front end and back end behavior definition
     - [ ] Creating and deploying an app to Heroku. **(0% We didn't get our app to deploy on heroku correctly, so we didn't feel like we could write this)**
@@ -30,7 +30,7 @@ The App: As a user...
 - [X] Create a database of to do list items.
 - [X] Create the back end using node and express.
 - [ ] Deploy the app to heroku. **50% Complete: Deployed, but didn't have time to make it load correctly. [Check it out](https://todowiggly-jacana.herokuapp.com/)**
-- [ ] JS Lint finds no mistakes
+- [X] JS Lint finds no mistakes
 - [X] Follow good Git team behaviors [like this](http://www.aimeemarieknight.com/simple-team-workflow-git/) (Not following last two steps, see tutorial section above)
 
 #### Stretch Goals/Nice to Have's:
